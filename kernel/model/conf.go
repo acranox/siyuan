@@ -420,6 +420,7 @@ func InitConf() {
 	if nil == Conf.System.NetworkProxy {
 		Conf.System.NetworkProxy = &conf.NetworkProxy{}
 	}
+	util.SetRhyResultEnabled(!Conf.System.DisableVersionCheck)
 	if "" == Conf.System.ID {
 		Conf.System.ID = util.GetDeviceID()
 	}

@@ -18,8 +18,10 @@ package util
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"sync"
+	"sync/atomic"
 	"time"
 
 	"github.com/siyuan-note/httpclient"
@@ -29,6 +31,8 @@ import (
 
 var (
 	RhyCacheDuration = int64(3600 * 6)
+	ErrRhyDisabled   = errors.New("rhy version HTTP request disabled")
+	disableRhyResult atomic.Bool
 
 	cachedRhyResult    = map[string]any{}
 	rhyResultCacheTime int64
@@ -39,7 +43,16 @@ var (
 	rhyBazaarHashLock sync.RWMutex
 )
 
+// SetRhyResultEnabled 设置是否允许请求版本元数据。
+func SetRhyResultEnabled(enabled bool) {
+	disableRhyResult.Store(!enabled)
+}
+
 func RefreshRhyResultJob() {
+	if disableRhyResult.Load() {
+		return
+	}
+
 	_, err := GetRhyResult(context.TODO(), true)
 	if nil != err {
 		// 系统唤醒后可能还没有网络连接，这里等待后再重试
@@ -51,6 +64,10 @@ func RefreshRhyResultJob() {
 }
 
 func GetRhyResult(ctx context.Context, force bool) (map[string]any, error) {
+	if disableRhyResult.Load() {
+		return nil, ErrRhyDisabled
+	}
+
 	if ContainerDocker == Container {
 		RhyCacheDuration = int64(3600 * 24)
 	}

@@ -1016,6 +1016,21 @@ func setDownloadInstallPkg(c *gin.Context) {
 	model.Conf.Save()
 }
 
+func setVersionCheck(c *gin.Context) {
+	ret := gulu.Ret.NewResult()
+	defer c.JSON(http.StatusOK, ret)
+
+	arg, ok := util.JsonArg(c, ret)
+	if !ok {
+		return
+	}
+
+	versionCheck := arg["versionCheck"].(bool)
+	model.Conf.System.DisableVersionCheck = !versionCheck
+	util.SetRhyResultEnabled(versionCheck)
+	model.Conf.Save()
+}
+
 func setNetworkProxy(c *gin.Context) {
 	ret := gulu.Ret.NewResult()
 	defer c.JSON(http.StatusOK, ret)

@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Periksa pembaruan versi",
+	"versionCheckTip": "Jika dinonaktifkan, SiYuan tidak akan meminta metadata pembaruan versi",
 	"configGroupMcp": "Layanan MCP Agen",
 	"configGroupEmbedding": "Model Embedding",
 	"addToAgent": "Tambah ke Obrolan Agen",

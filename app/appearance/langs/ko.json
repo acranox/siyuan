@@ -1,4 +1,6 @@
 {
+	"versionCheck": "버전 업데이트 확인",
+	"versionCheckTip": "비활성화하면 SiYuan이 버전 업데이트 메타데이터를 요청하지 않습니다",
 	"configGroupMcp": "에이전트 MCP 서비스",
 	"configGroupEmbedding": "임베딩 모델",
 	"addToAgent": "에이전트 대화에 추가",

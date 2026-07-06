@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Check for updates",
+	"versionCheckTip": "When disabled, SiYuan will not request version update metadata",
 	"configGroupMcp": "Agent MCP Service",
 	"configGroupEmbedding": "Embedding Model",
 	"addToAgent": "Add to Agent Chat",

@@ -1,4 +1,6 @@
 {
+	"versionCheck": "בדיקת עדכוני גרסה",
+	"versionCheckTip": "כאשר האפשרות מושבתת, SiYuan לא יבקש מטא-נתונים של עדכוני גרסה",
 	"configGroupMcp": "שירות MCP של הסוכן",
 	"configGroupEmbedding": "מודל הטמעה",
 	"addToAgent": "הוסף לצ'אט הסוכן",

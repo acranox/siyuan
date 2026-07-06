@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Sprawdzaj aktualizacje wersji",
+	"versionCheckTip": "Po wyłączeniu SiYuan nie będzie pobierać metadanych aktualizacji wersji",
 	"configGroupMcp": "Usługa MCP agenta",
 	"configGroupEmbedding": "Model osadzania",
 	"addToAgent": "Dodaj do czatu agenta",

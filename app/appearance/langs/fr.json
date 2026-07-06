@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Rechercher les mises à jour",
+	"versionCheckTip": "Si cette option est désactivée, SiYuan ne demandera pas les métadonnées de mise à jour de version",
 	"configGroupMcp": "Service MCP de l'agent",
 	"configGroupEmbedding": "Modèle d'intégration",
 	"addToAgent": "Ajouter à la conversation de l'agent",

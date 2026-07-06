@@ -1,4 +1,6 @@
 {
+	"versionCheck": "检查版本更新",
+	"versionCheckTip": "关闭后，思源不会请求版本更新元数据",
 	"configGroupMcp": "智能体 MCP 服务",
 	"configGroupEmbedding": "嵌入模型",
 	"addToAgent": "添加到智能体会话",

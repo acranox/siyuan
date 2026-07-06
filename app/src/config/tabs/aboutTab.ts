@@ -15,9 +15,16 @@ const registerAboutVersionGroup = (tab: SettingTabBuilder) => {
             window.siyuan.languages.downloadLatestVer,
             window.siyuan.languages.isMsStoreVerTip,
             window.siyuan.languages.checkUpdate,
+            window.siyuan.languages.versionCheck,
         ],
         html: genAboutVersionHtml,
         afterMount: mountAboutVersionSlot,
+    });
+    group.switch("system.versionCheck", {
+        title: window.siyuan.languages.versionCheck,
+        desc: window.siyuan.languages.versionCheckTip,
+        readConfig: () => !window.siyuan.config.system.disableVersionCheck,
+        save: (value) => sendAppSetting("system.versionCheck", value),
     });
     /// #if !BROWSER
     if (!window.siyuan.config.system.isMicrosoftStore && window.siyuan.config.system.container === "std" && window.siyuan.config.system.os !== "linux") {

@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Перевіряти оновлення версії",
+	"versionCheckTip": "Якщо вимкнено, SiYuan не запитуватиме метадані оновлення версії",
 	"configGroupMcp": "Служба MCP агента",
 	"configGroupEmbedding": "Модель вбудовування",
 	"addToAgent": "Додати до чату агента",

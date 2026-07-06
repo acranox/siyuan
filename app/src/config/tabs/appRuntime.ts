@@ -66,6 +66,13 @@ export const sendAppSetting = (controlId: string, value: unknown) => {
             });
             break;
         }
+        case "system.versionCheck": {
+            const versionCheck = Boolean(value);
+            fetchPost("/api/system/setVersionCheck", {versionCheck}, () => {
+                window.siyuan.config.system.disableVersionCheck = !versionCheck;
+            });
+            break;
+        }
         default:
             console.warn(`[config] sendAppSetting: unhandled controlId "${controlId}"`);
             break;

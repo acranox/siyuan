@@ -249,7 +249,9 @@ type Announcement struct {
 func getAnnouncements() (ret []*Announcement) {
 	result, err := util.GetRhyResult(context.TODO(), false)
 	if err != nil {
-		logging.LogErrorf("get announcement failed: %s", err)
+		if err != util.ErrRhyDisabled {
+			logging.LogErrorf("get announcement failed: %s", err)
+		}
 		return
 	}
 

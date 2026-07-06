@@ -1,4 +1,6 @@
 {
+	"versionCheck": "संस्करण अपडेट जांचें",
+	"versionCheckTip": "अक्षम होने पर, SiYuan संस्करण अपडेट मेटाडेटा का अनुरोध नहीं करेगा",
 	"configGroupMcp": "एजेंट MCP सेवा",
 	"configGroupEmbedding": "एम्बेडिंग मॉडल",
 	"addToAgent": "एजेंट चैट में जोड़ें",

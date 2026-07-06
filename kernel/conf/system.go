@@ -40,9 +40,10 @@ type System struct {
 	NetworkServeTLS bool          `json:"networkServeTLS"` // 是否开启 HTTPS 网络伺服
 	NetworkProxy    *NetworkProxy `json:"networkProxy"`
 
-	DownloadInstallPkg bool `json:"downloadInstallPkg"`
-	AutoLaunch2        int  `json:"autoLaunch2"`    // 0：不自动启动，1：自动启动，2：自动启动+隐藏主窗口
-	LockScreenMode     int  `json:"lockScreenMode"` // 0：手动，1：手动+跟随系统 https://github.com/siyuan-note/siyuan/issues/9087
+	DownloadInstallPkg   bool `json:"downloadInstallPkg"`
+	DisableVersionCheck bool `json:"disableVersionCheck"` // 是否禁用版本元数据检查
+	AutoLaunch2         int  `json:"autoLaunch2"`          // 0：不自动启动，1：自动启动，2：自动启动+隐藏主窗口
+	LockScreenMode      int  `json:"lockScreenMode"`       // 0：手动，1：手动+跟随系统 https://github.com/siyuan-note/siyuan/issues/9087
 
 	DisabledFeatures []string `json:"disabledFeatures"`
 

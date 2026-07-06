@@ -1,4 +1,6 @@
 {
+	"versionCheck": "التحقق من تحديثات الإصدار",
+	"versionCheckTip": "عند التعطيل، لن يطلب SiYuan بيانات تحديث الإصدار الوصفية",
 	"configGroupMcp": "خدمة MCP للوكيل",
 	"configGroupEmbedding": "نموذج التضمين",
 	"addToAgent": "إضافة إلى محادثة الوكيل",

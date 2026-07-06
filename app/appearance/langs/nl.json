@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Versie-updates controleren",
+	"versionCheckTip": "Als dit is uitgeschakeld, vraagt SiYuan geen metadata voor versie-updates op",
 	"configGroupMcp": "Agent-MCP-service",
 	"configGroupEmbedding": "Embedding-model",
 	"addToAgent": "Toevoegen aan agent-chat",

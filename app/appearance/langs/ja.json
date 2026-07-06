@@ -1,4 +1,6 @@
 {
+	"versionCheck": "バージョン更新を確認",
+	"versionCheckTip": "無効にすると、SiYuan はバージョン更新メタデータを要求しません",
 	"configGroupMcp": "エージェント MCP サービス",
 	"configGroupEmbedding": "埋め込みモデル",
 	"addToAgent": "エージェント会話に追加",

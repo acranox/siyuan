@@ -1,4 +1,6 @@
 {
+	"versionCheck": "ตรวจสอบการอัปเดตเวอร์ชัน",
+	"versionCheckTip": "เมื่อปิดใช้งาน SiYuan จะไม่ร้องขอเมตาดาต้าการอัปเดตเวอร์ชัน",
 	"configGroupMcp": "บริการ MCP ของเอเจนต์",
 	"configGroupEmbedding": "โมเดลฝังตัว",
 	"addToAgent": "เพิ่มไปยังแชทเอเจนต์",

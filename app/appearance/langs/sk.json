@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Kontrolovať aktualizácie verzie",
+	"versionCheckTip": "Keď je vypnuté, SiYuan nebude požadovať metadáta aktualizácie verzie",
 	"configGroupMcp": "Služba MCP agenta",
 	"configGroupEmbedding": "Model vnorenia",
 	"addToAgent": "Pridať do konverzácie s agentom",

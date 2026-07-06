@@ -1707,6 +1707,10 @@ declare namespace Config {
          */
         downloadInstallPkg: boolean;
         /**
+         * 是否禁用版本更新元数据检查
+         */
+        disableVersionCheck: boolean;
+        /**
          * The absolute path of the user's home directory for the current operating system user
          */
         homeDir: string;

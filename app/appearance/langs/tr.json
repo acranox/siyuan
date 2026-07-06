@@ -1,4 +1,6 @@
 {
+	"versionCheck": "Sürüm güncellemelerini denetle",
+	"versionCheckTip": "Devre dışı bırakıldığında SiYuan sürüm güncelleme meta verilerini istemez",
 	"configGroupMcp": "Ajan MCP Hizmeti",
 	"configGroupEmbedding": "Gömme Modeli",
 	"addToAgent": "Ajan sohbetine ekle",
